@@ -1,0 +1,26 @@
+{
+  "name": "pon-list-back",
+  "version": "1.0.0",
+  "description": "A To Do List for Pon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon server.js"
+  },
+  "keywords": [
+    "pon",
+    "todo-list"
+  ],
+  "author": "Pon",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
