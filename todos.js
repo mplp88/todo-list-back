@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   let id = req.params.id;
-  let doc = await db.collection('todos').doc(id).get(); //todos.find(x => x.id == id);
+  let doc = await db.collection('todos').doc(id).get();
 
   if (!doc.exists) {
     return res.status(404).json({
@@ -65,7 +65,7 @@ router.put('/:id', async (req, res) => {
   let id = req.params.id;
   let description = req.body.description;
   let done = req.body.done;
-  let docRef = await db.collection('todos').doc(id);
+  let docRef = db.collection('todos').doc(id);
   let doc = await docRef.get();
 
   if (!doc.exists) {

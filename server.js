@@ -4,9 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const os = require('os');
-console.log(os.hostname())
-
 const Todos = require('./todos');
 
 const app = express();
